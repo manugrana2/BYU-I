@@ -1,0 +1,125 @@
+
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #7592BC  ;
+  --secondary-color:#43a5ff ;
+  --accent1-color: #E6F4F1;
+  --accent2-color: #F5FAFF;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Montserrat', sans-serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #7592BC;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #7592BC; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #7592BC  ;
+  --nav-link-color: #F5FAFF;
+  --nav-background-color: #008A5F;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #33C191;
+}
+p{
+    font-family:--paragraph-font ;
+}
+h1, h2, h3 {
+    font-family: --heading-font;
+}
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a, #hero-msg h1, #hero-msg h4, .hero-btn-box, main section{
+    text-align: center;
+}
+nav a, .join, footer a{
+    text-decoration: none;
+}
+
+.hero-btn-box{
+    margin-bottom: 15px;
+}
+.book-btn, .join{
+    text-decoration: none;
+    padding: 12px;
+    color: var(--nav-hover-link-color);
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #7592BC;
+}
+main section img {
+    box-sizing: border-box;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+  margin: 200px 0;
+}
+
+
+#background {
+    height: 725px;
+    background-color: var(--primary-color);
+}
+
+body {
+    background-color: var(--accent2-color); 
+    color: var(--paragraph-background-color);
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    font-size: 1.2em;
+}
+
+#logo_link{
+    width: 90px;
+}
+nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 18px;    
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+.icon {
+    width: 80px;
+}
+
+footer,.msg{
+    color: var(--accent1-color);
+    background-color: var(--paragraph-background-color);
+}
+
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}    
