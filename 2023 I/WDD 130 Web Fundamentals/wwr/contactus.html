@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | FAQ</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html">
+                <img  id="logo_link" src="https://github.com/manugrana2/WDD-130-Web-Fundamentals/blob/master/src/images/favicon.png?raw=true" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="https://us.123rf.com/450wm/markrademaker/markrademaker2210/markrademaker221000143/192477734-electric-plug-and-night-table-office-desktop-lamp-cartoon-brain-electric-power-lamp-idea-faq.jpg?ver=6" alt="FAQ main Image">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Let us know your opinion</h1>
+            </section>
+
+        </div>
+        <main class="faq-grid">
+            <form>
+                <div id="feedbackinfo"></div>
+                <label for="user_name">Name:</label>
+                <input type="text" id="user_name" name="user_name">
+                <br>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+        </main>
+        <footer>
+            <p>Dry Oar &copy; 2023 - Jose Manuel Granados Collazos</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedbackinfo');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+            formElement.reset()
+        });
+    </script>               
+</body>
+</html>

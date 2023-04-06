@@ -1,0 +1,56 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+   Budget Tool
+
+2. What real-world problem will your program address or help to solve?
+    I aim to address a real-world problem that many small businesses face, which is the challenge of managing their finances effectively. 
+    My program will provide a simple and efficient solution for businesses to keep track of their expenses and income,
+    allowing them to monitor their cash flow, identify areas for cost savings, 
+    and improve their financial reporting. 
+    By helping businesses to manage their finances more effectively,
+    I hope to contribute to their success and growth in the long run.   The program helps small business to keep track of where their money is being spent, and how much they've got coming in.
+
+3. What will you learn from developing this program?
+    I will learn programming skills and gain experience in developing software 
+    that can track business income and expenses, calculate earnings or losses,
+    and provide valuable insights into the financial health of the business. 
+    This project will also help me improve my problem-solving skills,
+    logical thinking, and attention to detail.
+4. What Python modules will your program use?
+
+    The program will use csv, datetime, matplotlib, math, tkinter, pytest, random and 
+    any module that can faster the development of the program.
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+
+    Yes, I will separate my program into functions that each perform a single task.
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. Will you write test functions to test at least two of your program
+functions?
+   
+   Yes, I will write at least to functions to test more that two of my program functions.
+

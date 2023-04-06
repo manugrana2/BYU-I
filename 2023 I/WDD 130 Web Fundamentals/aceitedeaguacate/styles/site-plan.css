@@ -36,7 +36,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 4em;
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
 }
 img {
@@ -66,6 +66,11 @@ header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
 p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+ol{
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
@@ -125,43 +130,64 @@ nav a:hover {
 .sitemap {
   display: grid;
   justify-content: center;
+  column-gap: 10px;
 
   grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-rows: 3em 1.5em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
     ". . . top . ."
     ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "about about services services contact contact";
 }
+
 .sitemap > div {
   text-align: center;
 }
+
 .sm-home {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page2 {
-  grid-area: page2;
+
+.sm-about {
+  grid-area: about;
   background-color: #ccc;
-  line-height: 3em;
+  line-height: 2em;
 }
-.sm-page3 {
-  grid-area: page3;
+
+.sm-services {
+  grid-area: services;
   background-color: #ccc;
-  line-height: 3em;
+  line-height: 2em;
 }
+
+.sm-contact {
+  grid-area: contact;
+  background-color: #ccc;
+  line-height: 2em;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
 }
+
 .left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
 }
+
 .right {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.bottom {
+  grid-area: bottom;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  justify-self: center;
 }

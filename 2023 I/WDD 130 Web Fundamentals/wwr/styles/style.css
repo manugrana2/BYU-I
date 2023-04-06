@@ -29,10 +29,10 @@ Fonts are separated by a & */
   --nav-hover-background-color: #33C191;
 }
 p{
-    font-family:--paragraph-font ;
+    font-family:var(--paragraph-font);
 }
 h1, h2, h3 {
-    font-family: --heading-font;
+    font-family: var(--heading-font);
 }
 #content{
     max-width: 1400px;
@@ -255,7 +255,7 @@ footer p a:hover {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+        color: var(--nav-background-color);
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
@@ -273,3 +273,43 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
+
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #888888;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  textarea, input[type="text"] {
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #888888;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--accent3-color);
+  }
