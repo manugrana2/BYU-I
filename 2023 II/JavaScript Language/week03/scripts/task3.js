@@ -10,18 +10,32 @@ function add(number1, number2){
 
 // Step 3: Step 3: Using function declaration, define another function named addNumbers that gets the values of two HTML form controls with IDs of addend1 and addend2. Pass them to the add function
 function addNumbers(){
-    number1 = document.getElementById("addend1")
-    number2 = document.getElementById("addend2")
+    number1 = parseFloat(document.getElementById("addend1").value)
+    number2 = parseFloat(document.getElementById("addend2").value)
     result = add(number1, number2)
     // Step 4: Assign the return value to an HTML form element with an ID of sum
-
+    document.getElementById("sum").value = result
     
 
 }
 
 // Step 5: Add a "click" event listener to the HTML button with an ID of addNumbers that calls the addNumbers function
-addNumbersBtn = document.getElementById("addNumbers").addEventListener()
+document.getElementById("addNumbers").addEventListener("click", addNumbers)
 // Step 6: Using function expressions, repeat Steps 1-5 with new functions named subtract and subtractNumbers and HTML form controls with IDs of minuend, subtrahend, difference and subtractNumbers
+
+function subtract(number1, number2){
+    return number1 - number2;
+
+}
+function subtractNumbers(){
+    number1 = parseFloat(document.getElementById("minuend").value)
+    number2 = parseFloat(document.getElementById("subtrahend").value)
+    result = subtract(number1, number2)
+    document.getElementById("difference").value = result
+    
+
+}
+document.getElementById("subtractNumbers").addEventListener("click", subtractNumbers)
 
 // Step 7: Using arrow functions, repeat Steps 1-5 with new functions named multiply and mulitplyNumbers and HTML form controls with IDs of factor1, factor2, product and multiplyNumbers
 
